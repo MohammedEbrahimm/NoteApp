@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/NoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Note"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+     <ImageView
+         android:id="@+id/SaveButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/baseline_done_24"
+         android:layout_alignParentEnd="true"
+         android:layout_alignTop="@+id/NoteHeading"
+         android:layout_marginEnd="6dp"
+         tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/TitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter The Title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/NoteHeading"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/ContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TitleEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter The Description"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+
+    
+
+</RelativeLayout>
